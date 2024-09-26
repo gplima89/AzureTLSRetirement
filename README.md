@@ -1,5 +1,5 @@
 # AzureTLSRetirement
-<br />
+
 # Implementation Steps
 1- Access Azure Portal<br />
 2- Go to Monitor -> Workbooks<br />
@@ -17,7 +17,9 @@
   - Click on Apply<br />
  ![image](https://github.com/user-attachments/assets/350724c7-c9bc-4e43-b2e0-e6eb098ebfec)
 
-<br /><br /> #Final result<br />
+<br /><br /> 
+# Final Results
+<br />
 ![image](https://github.com/user-attachments/assets/3d98f5a8-1ed7-4f10-9686-23d1798bb0aa)
 
 
