@@ -1,0 +1,189 @@
+{
+  "version": "Notebook/1.0",
+  "items": [
+    {
+      "type": 1,
+      "content": {
+        "json": "## Azure TLS 1.0 and 1.1 Resource List"
+      },
+      "name": "Title"
+    },
+    {
+      "type": 9,
+      "content": {
+        "version": "KqlParameterItem/1.0",
+        "parameters": [
+          {
+            "id": "16030a75-1de4-4dad-bfad-0cb49f81690c",
+            "version": "KqlParameterItem/1.0",
+            "name": "SubscriptionId",
+            "label": "Subscription",
+            "type": 6,
+            "isRequired": true,
+            "isGlobal": true,
+            "multiSelect": true,
+            "quote": "'",
+            "delimiter": ",",
+            "typeSettings": {
+              "additionalResourceOptions": [
+                "value::all"
+              ],
+              "includeAll": false,
+              "showDefault": false
+            },
+            "timeContext": {
+              "durationMs": 86400000
+            },
+            "defaultValue": "value::all",
+            "value": [
+              "value::all"
+            ]
+          },
+          {
+            "id": "fd8fc823-879f-4647-b9ea-23e37fe830c7",
+            "version": "KqlParameterItem/1.0",
+            "name": "Region",
+            "label": "Location",
+            "type": 8,
+            "description": "A geographic location where resources are located",
+            "isGlobal": true,
+            "multiSelect": true,
+            "quote": "'",
+            "delimiter": ",",
+            "typeSettings": {
+              "additionalResourceOptions": [
+                "value::all"
+              ],
+              "includeAll": true,
+              "selectAllValue": "*",
+              "showDefault": false
+            },
+            "timeContext": {
+              "durationMs": 86400000
+            },
+            "defaultValue": "value::all",
+            "value": [
+              "value::all"
+            ]
+          }
+        ],
+        "style": "above",
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces"
+      },
+      "name": "ParameterDeclaration"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "{\"version\":\"1.0.0\",\"content\":\"[\\r\\n\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Storage Account\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.storage/storageaccounts\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Front Door\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.network/frontdoors\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Restore Points\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.compute/restorepointcollections\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Network Interfaces\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.network/networkinterfaces\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"VM Extension\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.compute/virtualmachines/extensions\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"App Managed Environment\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.app/managedenvironments\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Key Vault\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.keyvault/vaults\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Insights Workbook\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.insights/workbooks\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Virtual Machine\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.compute/virtualmachines\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"SQL MI\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.sql/managedinstances\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Event Grid\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.eventgrid/topics\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Postgre SQL\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.dbforpostgresql/servers\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"APIM\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.apimanagement/service\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Cosmos DB\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.documentdb/databaseaccounts\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Service Bus\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.servicebus/namespaces\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"SQL Server\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.sql/servers\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n,\\t\\t{\\r\\n\\t\\t\\t\\\"ServiceName\\\":\\\"Event Hub\\\"\\r\\n\\t\\t\\t,\\\"ResourceType\\\":\\\"microsoft.eventhub/namespaces\\\"\\r\\n\\t\\t\\t,\\\"RetirementDate\\\":\\\"2024-10-31\\\"\\r\\n\\t\\t}\\r\\n]\",\"transformers\":null}",
+        "size": 0,
+        "exportedParameters": [
+          {
+            "parameterType": 1
+          }
+        ],
+        "queryType": 8
+      },
+      "conditionalVisibility": {
+        "parameterName": "showtable",
+        "comparison": "isEqualTo",
+        "value": "show"
+      },
+      "name": "MasterData"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "resources\r\n| where type !contains \"microsoft.compute/virtualmachines\" or type !contains \"microsoft.compute/restorepointcollections\"\r\n| join kind=inner (\r\n    resourcecontainers | where type == 'microsoft.resources/subscriptions'\r\n    | project subscriptionId, subscriptionName = name, subtags = tags)\r\n    on subscriptionId\r\n| extend properties = parse_json(properties)\r\n| mv-expand properties\r\n| extend clusterSettings = parse_json(properties.clusterSettings)\r\n| mv-expand clusterSettings\r\n| where (isnull(clusterSettings) or (clusterSettings.name != \"disabletls1.0\" or clusterSettings.value != \"1\"))\r\n| extend minProtocolVersion = parse_json(properties.clusterSettings)\r\n| mv-expand minProtocolVersion\r\n| where (isnull(minProtocolVersion)) or tostring(properties) contains \"minProtocolVersion\" and (tostring(properties) contains \"2\")\r\n| where (tostring(properties) contains \"TLS\" and not(tostring(properties) contains \"2\")) or (tostring(properties) contains \"Protocols.Tls10\" and (tostring(properties) contains \"true\"))\r\n| where ('*' in (dynamic([{Region}])) or location in (dynamic([{Region}])))\r\n| summarize ResourceCount=count() by type",
+        "size": 0,
+        "exportedParameters": [
+          {
+            "fieldName": "Name",
+            "parameterName": "ResourceInSelectedService",
+            "parameterType": 5
+          }
+        ],
+        "queryType": 1,
+        "resourceType": "microsoft.resourcegraph/resources",
+        "crossComponentResources": [
+          "{SubscriptionId}"
+        ],
+        "visualization": "table",
+        "gridSettings": {
+          "rowLimit": 10000
+        },
+        "sortBy": []
+      },
+      "conditionalVisibility": {
+        "parameterName": "ShowData",
+        "comparison": "isEqualTo",
+        "value": "Show"
+      },
+      "name": "ResourceCount"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "{\"version\":\"Merge/1.0\",\"merges\":[{\"id\":\"13021508-177d-48ec-86b9-b7fde012704b\",\"mergeType\":\"leftouter\",\"leftTable\":\"MasterData\",\"rightTable\":\"ResourceCount\",\"leftColumn\":\"ResourceType\",\"rightColumn\":\"type\"}],\"projectRename\":[{\"originalName\":\"[ResourceCount].ServiceID\",\"mergedName\":\"ServiceID\",\"fromId\":\"unknown\"},{\"originalName\":\"[MasterData].ResourceType\",\"mergedName\":\"ResourceType\",\"fromId\":\"unknown\"},{\"originalName\":\"[MasterData].ServiceName\",\"mergedName\":\"ServiceName\",\"fromId\":\"13021508-177d-48ec-86b9-b7fde012704b\"},{\"originalName\":\"[MasterData].RetirementDate\",\"mergedName\":\"RetirementDate\",\"fromId\":\"13021508-177d-48ec-86b9-b7fde012704b\"},{\"originalName\":\"[ResourceCount].ResourceCount\",\"mergedName\":\"ResourceCount\",\"fromId\":\"13021508-177d-48ec-86b9-b7fde012704b\"},{\"originalName\":\"[MasterData].Id\"},{\"originalName\":\"[ResourceCount].type\"}]}",
+        "size": 0,
+        "title": "Retiring TLS Services",
+        "showRefreshButton": true,
+        "exportMultipleValues": true,
+        "exportedParameters": [
+          {
+            "fieldName": "ResourceType",
+            "parameterName": "SelectedServiceType",
+            "parameterType": 1,
+            "quote": "\""
+          }
+        ],
+        "showExportToExcel": true,
+        "queryType": 7,
+        "gridSettings": {
+          "rowLimit": 10000,
+          "filter": true,
+          "sortBy": [
+            {
+              "itemKey": "ResourceType",
+              "sortOrder": 2
+            }
+          ]
+        },
+        "sortBy": [
+          {
+            "itemKey": "ResourceType",
+            "sortOrder": 2
+          }
+        ]
+      },
+      "name": "Main Query"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "resources\r\n| where type !contains \"microsoft.compute/virtualmachines\" or type !contains \"microsoft.compute/restorepointcollections\"\r\n| join kind=inner (\r\n    resourcecontainers | where type == 'microsoft.resources/subscriptions'\r\n    | project subscriptionId, subscriptionName = name, subtags = tags)\r\n    on subscriptionId\r\n| extend properties = parse_json(properties)\r\n| mv-expand properties\r\n| extend clusterSettings = parse_json(properties.clusterSettings)\r\n| mv-expand clusterSettings\r\n| where (isnull(clusterSettings) or (clusterSettings.name != \"disabletls1.0\" or clusterSettings.value != \"1\"))\r\n| extend minProtocolVersion = parse_json(properties.clusterSettings)\r\n| mv-expand minProtocolVersion\r\n| where (isnull(minProtocolVersion)) or tostring(properties) contains \"minProtocolVersion\" and (tostring(properties) contains \"2\")\r\n| where (tostring(properties) contains \"TLS\" and not(tostring(properties) contains \"2\")) or (tostring(properties) contains \"Protocols.Tls10\" and (tostring(properties) contains \"true\"))\r\n| where ('*' in (dynamic([{Region}])) or location in (dynamic([{Region}])))\r\n| project subscriptionId, type, resourceGroup, location, id, tags, subtags\r\n| where array_length(dynamic([{SelectedServiceType}])) == 0 or type in (dynamic([{SelectedServiceType}])) ",
+        "size": 0,
+        "title": "Filtered results and resource details",
+        "showExportToExcel": true,
+        "queryType": 1,
+        "resourceType": "microsoft.resourcegraph/resources",
+        "crossComponentResources": [
+          "{SubscriptionId}"
+        ],
+        "gridSettings": {
+          "rowLimit": 10000
+        }
+      },
+      "name": "Filtered results and resource details"
+    }
+  ],
+  "fallbackResourceIds": [
+    "Azure Monitor"
+  ],
+  "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
+}
