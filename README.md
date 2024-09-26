@@ -20,6 +20,4 @@
 <br /><br /> 
 # Final Results
 <br />
-![image](https://github.com/user-attachments/assets/3d98f5a8-1ed7-4f10-9686-23d1798bb0aa)
-
-
+![image](https://github.com/user-attachments/assets/83ccc3c3-b9d5-4856-a2d9-51aa6e45315b)
