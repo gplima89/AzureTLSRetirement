@@ -17,8 +17,6 @@
   - Click on Apply<br />
  ![image](https://github.com/user-attachments/assets/350724c7-c9bc-4e43-b2e0-e6eb098ebfec)
 
-<br /><br /> 
-# Final Results
 <br />
-![image](https://github.com/user-attachments/assets/83ccc3c3-b9d5-4856-a2d9-51aa6e45315b)
+# Final Results
 ![image](https://github.com/user-attachments/assets/e4ea1cda-a161-4c7f-9937-e7dd4c0bc28a)
